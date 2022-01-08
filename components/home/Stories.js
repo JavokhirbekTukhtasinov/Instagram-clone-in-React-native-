@@ -2,8 +2,6 @@ import React from 'react';
 import {Image, ScrollView, StyleSheet, Text, View} from 'react-native';
 import dummyData from '../../data/dummyData';
 const Stories = () => {
-  console.log(dummyData);
-
   return (
     <View style={styles.container}>
       <ScrollView horizontal>

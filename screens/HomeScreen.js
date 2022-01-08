@@ -7,10 +7,10 @@ import Stories from '../components/home/Stories';
 import {bottomTabIcons} from '../data/bottom-icons';
 import {PostDummy} from '../data/dummyData';
 
-const HomeScreen = () => {
+const HomeScreen = ({navigation}) => {
   return (
     <SafeAreaView style={styles.container}>
-      <Header />
+      <Header navigation={navigation} />
       <Stories />
       <ScrollView>
         {PostDummy.map((val, index) => (
